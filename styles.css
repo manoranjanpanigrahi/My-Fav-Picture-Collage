@@ -117,16 +117,19 @@ body{
  /* about page*/
 
  .two-column-wrapper{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(460px , 1fr))
  }
  .profile-img-wrapper img{
+   float: left;
    height: 80%;
-   padding-left: 30px;
+   padding: 20px;
  }
  .profile-content-wrapper{
    font-family: cursive;
    font-size: 20px;
-   margin-right: 40px;
+   margin-right: 30px;
+   margin-left: 10px;
   
  }
  .profile-content-wrapper h1 {
